@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Source Sans';
+  src: url('res/font/SourceSansPro-Regular.eot');
+  src: url('res/font/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('res/font/SourceSansPro-Regular.woff2') format('woff2'),
+    url('res/font/SourceSansPro-Regular.woff') format('woff'),
+    url('res/font/SourceSansPro-Regular.ttf') format('truetype'),
+    url('res/font/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  --main-color: #af223c;
+}
+
+body {
+  background-color: #eeece5;
+  overflow-x: hidden;
+}
