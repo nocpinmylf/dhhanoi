@@ -2,6 +2,8 @@ let subMenuListStatus = {};
 let subMenuList = document.getElementsByClassName('sub');
 let dropdown = document.getElementsByClassName('dropdown');
 
+
+// active sub menu
 for (let i = 0; i < subMenuList.length; i++) {
   subMenuListStatus[i] = false;
   hideSubItem(subMenuList[i], subMenuListStatus[i]);

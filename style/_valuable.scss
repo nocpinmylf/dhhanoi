@@ -1,0 +1,26 @@
+// color =============================
+$red-color: #af223c;
+$black-color: #333;
+$black-color-blur: #333333c4;
+$yellow-color: #f0da0e;
+$white-color: #ffffff;
+$scroll-bar-color: rgb(216, 193, 164);
+$border-color: #851328fb;
+
+// size ==============================
+$font-size: 15px;
+
+// font ==============================
+$font: 'Source Sans', Cambria;
+
+@font-face {
+  font-family: 'Source Sans';
+  src: url('../res/font/SourceSansPro-Regular.eot');
+  src: url('../res/font/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../res/font/SourceSansPro-Regular.woff2') format('woff2'),
+    url('../res/font/SourceSansPro-Regular.woff') format('woff'),
+    url('../res/font/SourceSansPro-Regular.ttf') format('truetype'),
+    url('../res/font/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+  font-weight: initial;
+  font-style: initial;
+}

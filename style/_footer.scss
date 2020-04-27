@@ -1,0 +1,147 @@
+@import "valuable";
+@import "mixin";
+
+/*------------------------
+FOOTER
+--------------------------*/
+#footer {
+  background-color: $red-color;
+  color: $yellow-color;
+  font-size: $font-size - 2;
+  border-top: 2px solid $yellow-color;
+
+  &>.wrap {
+    @include flex(column, null, null);
+  }
+}
+
+.footer-content {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-areas: "col1 col2 logo col3 col4";
+
+  & a {
+    color: $yellow-color;
+    
+    &:hover {
+      color: $white-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.col {
+
+  &-left,
+  &-right {
+    @include flex(column, null, null);
+    justify-self: end;
+    padding: 10px;
+    max-width: 180px;
+  }
+
+  &-left {
+    border-right: 1px solid $border-color;
+    text-align: end;
+  }
+
+  &-right {
+    text-align: justify;
+    justify-self: start;
+    border-left: 1px solid $border-color;
+  }
+}
+
+#col1 {
+  grid-area: col1;
+}
+
+#col2 {
+  grid-area: col2;
+}
+
+#col3 {
+  grid-area: col3;
+}
+
+#col4 {
+  grid-area: col4;
+}
+
+#footer-logo {
+  @include trans(.3s);
+  grid-area: logo;
+  display: block;
+  margin: auto;
+  width: 50%;
+
+  &>img {
+    width: 100%;
+  }
+}
+
+.social {
+  display: block;
+  margin: 0 auto;
+
+  & ul>li {
+    display: inline-block;
+    margin: .5rem;
+  }
+
+  & a {
+    @include trans(.1s);
+    color: $white-color;
+    padding: 10px;
+    font-size: 1.5rem;
+
+    &:hover {
+      @include trans(.1s);
+      color: $yellow-color;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+#copyright {
+  text-align: center;
+}
+
+
+/*------------------------
+RESPONSIVE
+--------------------------*/
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 100%;
+  }
+
+  /* footer ===================== */
+  .footer-content {
+    @include trans(.3s);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1.5fr repeat(2, 1fr);
+    grid-template-areas: "logo logo"
+      "col1 col3"
+      "col2 col4";
+  }
+
+  .col-left,
+  .col-right {
+    padding-bottom: 0;
+    max-width: 180px;
+  }
+
+  #footer {
+    &-logo {
+      @include trans(.3s);
+      width: 145px;
+
+      &>img {
+        width: 100%;
+      }
+    }
+  }
+}
