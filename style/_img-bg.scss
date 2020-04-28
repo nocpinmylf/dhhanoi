@@ -2,7 +2,6 @@
 @import "mixin";
 
 .img-bg {
-  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -10,6 +9,7 @@
   grid-template-areas: "div1 div1 div2" "div3 div4 div5";
   overflow: hidden;
   justify-content: center;
+  height: 600px;
   padding: 1rem 0;
 
   &>div {

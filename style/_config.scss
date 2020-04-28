@@ -36,7 +36,7 @@
   padding: 100px;
   border-radius: 100%;
   color: $white-color;
-  content: "loading";
+
   border-top: 16px solid $white-color;
   border-right: 16px solid $black-color;
   border-bottom: 16px solid $yellow-color;
@@ -81,6 +81,10 @@ ul {
 
 p {
   padding: 1rem 0 0 0;
+}
+
+h4 {
+  margin-bottom: 2rem ;
 }
 
 a:hover {

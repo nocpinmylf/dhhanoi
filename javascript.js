@@ -3,6 +3,11 @@ let subMenuList = document.getElementsByClassName('sub');
 let dropdown = document.getElementsByClassName('dropdown');
 
 
+//pre loading
+window.onload = () => {
+	document.getElementsByTagName('body')[0].classList.remove('loading');
+};
+
 // active sub menu
 for (let i = 0; i < subMenuList.length; i++) {
   subMenuListStatus[i] = false;
@@ -22,7 +27,3 @@ for (let i = 0; i < dropdown.length; i++) {
 	});
 }
 
-//
-window.onload = () => {
-	document.getElementsByTagName('body')[0].classList.remove('loading');
-};
