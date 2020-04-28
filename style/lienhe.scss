@@ -1,0 +1,142 @@
+@import "valuable";
+@import "mixin";
+@import "config";
+@import "header";
+@import "footer";
+
+
+#header {
+  background: transparent;
+  height: auto;
+  border-bottom: 2px solid $yellow-color;
+}
+
+.banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+
+// main==========================
+.main {
+  margin: 2rem auto;
+
+  h1, h3, h5 {
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+.contact-content {
+  @include flex(row, center, space-between);
+
+  @include breakpoint(tablet) {
+    @include flex(column, null, center);
+  }
+}
+
+.contact-form {
+
+  &>table {
+    margin-left: auto;
+    margin-right: auto;
+
+    label {
+      margin: 10px;
+    }
+  }
+
+  & input, textarea {
+    width: 200px;
+    border: 0;
+    box-shadow: 0 0 1px 0 $black-color-blur;
+  }
+
+  #submit {
+    display: block;
+    margin: 1em auto;
+    padding: 10px;
+    background-color: $red-color;
+    color: $yellow-color;
+    width: 50%;
+
+    &:hover {
+      background-color: $black-color;
+    }
+  }
+}
+
+#side-nav {
+  flex-grow: 1;
+
+  a {
+    display: block;
+    padding: 10px 15px;
+    color: yellow;
+    background-color: $red-color;
+    box-shadow: 0 0 4px 0 $border-color;
+
+    &:hover {
+      background-color: $black-color;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    width: 90%;
+    margin-top: 1rem;
+    order: 2;
+  }
+}
+
+#contact {
+  flex-grow: 6;
+
+  @include breakpoint(tablet) {
+    
+    flex-grow: 1;
+    order: 1;
+  }
+}
+
+// footer ==============
+.footer-content {
+  grid-template-areas: ". col1 logo col3 .";
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 100%;
+  }
+
+  /* footer ===================== */
+  .footer-content {
+    @include trans(.3s);
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas: "logo logo"
+      "col1 col3";
+  }
+
+  .col-left,
+  .col-right {
+    padding-bottom: 0;
+    max-width: 180px;
+  }
+
+  #footer {
+    &-logo {
+      @include trans(.3s);
+      width: 145px;
+
+      &>img {
+        width: 100%;
+      }
+    }
+  }
+}

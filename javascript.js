@@ -21,3 +21,8 @@ for (let i = 0; i < dropdown.length; i++) {
 		hideSubItem(subMenuList[i], subMenuListStatus[i]);
 	});
 }
+
+//
+window.onload = () => {
+	document.getElementsByTagName('body')[0].classList.remove('loading');
+};

@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-  <title>Đại Học Hà Nội</title>
+  <title>Liên Hệ</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type=“image/x-icon” href="res/img/logo-hanu.png">
-  <!-- CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/lienhe.css">
 </head>
 
 <body class="loading">
@@ -128,100 +128,73 @@
         </div>
       </div>
     </div>
-    <!-- play video button -->
-    <a href="" class="banner-button play" data-toggle="modal" data-target="#video-banner"><i
-        class="far fa-play-circle"></i></a>
-    <a href="#main" class="banner-button learn-more">Tìm Hiểu Thêm</a>
+
+    <div class="banner">
+      <img src="res/img/bannermain.jpg" alt="banner">
+    </div>
+
   </header>
 
-  <!-- main -->
-  <main id="main">
-    <div class="main-section light">
-      <a href="">Tin Tức Mới</a>
-      <div class="wrap">
-        <div class="news-group">
-          <div class="news-item">
-            <div>
-              <img src="res/img/news1.jpg" alt="news">
-            </div>
-            <p>Công đoàn Giáo dục Việt Nam tới thăm và tặng quà động viên các sinh viên đang ở lại Kí túc xá Trường Đại học Hà Nội</p>
-          </div>
-  
-          <div class="news-item">
-            <div>
-              <img src="res/img/news.jpg" alt="news">
-            </div>
-            <p>Thông báo điều chỉnh lịch làm việc của cán bộ công chức, viên chức, người lao động và người học của Nhà trường</p>
-          </div>
-        </div>
+  <main class="main wrap">
+    <h1 style="font-family: 'Times New Roman';"><i class="fas fa-university"></i> TRƯỜNG ĐẠI HỌC HÀ NỘI</h1>
+    <h5><i class="fas fa-map-marker-alt"></i> Km 9, Đường Nguyễn Trãi, Quận Nam Từ Liêm, Hà Nội, Việt Nam.</h5>
 
-        <div class="news-group">
-          <div class="news-item">
-            <div>
-              <img src="res/img/news2.jpg" alt="news">
-            </div>
-            <p>Cuộc thi Đại sứ văn hóa đọc 2020: Hành trình lan tỏa văn hóa đọc - 27/03/2020</p>
-          </div>
-  
-          <div class="news-item">
-            <div>
-              <img src="res/img/new3.jpg" alt="news">
-            </div>
-            <p>Tổng kết Đợt 1 Cuộc thi “Tuổi trẻ HANU- Sáng mãi niềm tin” - 16/03/2020</p>
-  
-          </div>
-        </div>
-
+    
+    <div class="contact-content">
+        <!-- side nav -->
+      <div class="side-nav" id="side-nav">
+        <ul>
+          <li><a href="https://goo.gl/maps/iw8J4ZnLz9TxPgXGA" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-map"></i> Bản Đồ</a></li>
+          <li><a href="tel:+8438544338" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i>
+              (84-24)38544338</a></li>
+          <li><a href="mailto:hanu@hanu.edu.vn" target="_blank" rel="noopener noreferrer"><i
+                class="far fa-envelope"></i> hanu@hanu.edu.vn</a></li>
+          <li><a href="mailto:tuyensinh@hanu.edu.vn" target="_blank" rel="noopener noreferrer"><i
+                class="far fa-envelope"></i> tuyensinh@hanu.edu.vn</a></li>
+        </ul>
       </div>
+        <!-- contact form -->
+      <form action="" class="contact-form" id="contact">
+        <h3>Liên Hệ</h3>
+        <table>
+          <tr>
+            <td><label for="">Tên</label></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td><input type="email"></td>
+          </tr>
+          <tr>
+            <td><label for="">Tiêu đề</label></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><label for="">Điện thoại</label></td>
+            <td><input type="tel"></td>
+          </tr>
+          <tr>
+            <td><label for="contact-form-noidung">Nội dung</label></td>
+            <td><textarea name="" id="contact-form-noidung" rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Gửi email" id="submit">
+            </td>
+          </tr>
+        </table>
+  
+      </form>
     </div>
-    <div class="main-section dark">
-      <a href="">Tuyển Sinh</a>
-      <h4>Một số chuyên ngành nổi bật</h4>
-      <div class="wrap slide">
-        <a href="">
-          <div class="nganh">
-            <img src="res/img/buckingham-palace.png" alt="">
-            <span>Ngôn ngữ Anh</span>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="nganh">
-            <img src="res/img/paifang.png" alt="">
-            <span>Ngôn ngữ Trung Quốc</span>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="nganh">
-            <img src="res/img/advertising.png" alt="">
-            <span>Marketing</span>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="nganh">
-            <img src="res/img/accounting.png" alt="">
-            <span>Kế toán</span>
-          </div>
-        </a>
-      </div>
-    </div>
-      <!-- img-bg -->
-    <div class="main-section light wrap img-bg">
-      <div class="div1"><a href=""><span>Mạng Lưới Cựu Sinh Viên</span></a></div>
-      <div class="div2"><a href=""><span>Nguyên Cứu Khoa Học</span></a></div>
-      <div class="div3"><a href=""><span>Hoạt Động</span></a></div>
-      <div class="div4"><a href=""><span>Hợp Tác Quốc Tế</span></a></div>
-      <div class="div5"><a href=""><span>Thông Báo</span></a></div>
-    </div>
-    <!-- <div class="main-section dark"></div> -->
+    
   </main>
 
   <!-- footer -->
   <footer id="footer">
     <div class="wrap">
       <div class="footer-content">
+          <!-- col1 -->
         <div class="col-left" id="col1">
           <ul>
             <li><a href="">Ảnh</a></li>
@@ -229,40 +202,19 @@
             <li><a href="">Thư Viện</a></li>
             <li><a href="">Học Bổng</a></li>
             <li><a href="">Thi Chứng Chỉ</a></li>
-
           </ul>
         </div>
-        <div class="col-left" id="col2">
+
+        <div id="footer-logo"><img src="res/img/logo-hanu.png" alt="Logo"></div>
+
+          <!-- col3 -->
+        <div class="col-right" id="col3">
           <ul>
             <li><a href="">Du Học</a></li>
             <li><a href="">Cơ Hội Việc Làm</a></li>
             <li><a href="">Gương Mặt Sinh Viên</a></li>
             <li><a href="">Thông Tin Tuyển Sinh</a></li>
             <li><a href="">Mạng Lưới Cựu Sinh Viên</a></li>
-          </ul>
-        </div>
-
-        <div id="footer-logo"><img src="res/img/logo-hanu.png" alt="Logo"></div>
-
-
-        <div class="col-right" id="col3">
-          <ul>
-            <li><span><i class="fas fa-university"></i> TRƯỜNG ĐẠI HỌC HÀ NỘI</span></li>
-            <li><i class="fas fa-map-marker-alt"></i> Km 9, Đường Nguyễn Trãi, Quận Nam Từ Liêm, Hà Nội, Việt Nam.</li>
-          </ul>
-        </div>
-
-        <div class="col-right" id="col4">
-          <ul>
-            <li><a href="lienhe.html"><i class="far fa-comment-alt"></i> Liên Hệ</a></li>
-            <li><a href="https://goo.gl/maps/iw8J4ZnLz9TxPgXGA" target="_blank" rel="noopener noreferrer"><i
-                  class="fas fa-map"></i> Bản Đồ</a></li>
-            <li><a href="tel:+8438544338" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i>
-                (84-24)38544338</a></li>
-            <li><a href="mailto:hanu@hanu.edu.vn" target="_blank" rel="noopener noreferrer"><i
-                  class="far fa-envelope"></i> hanu@hanu.edu.vn</a></li>
-            <li><a href="mailto:tuyensinh@hanu.edu.vn" target="_blank" rel="noopener noreferrer"><i
-                  class="far fa-envelope"></i> tuyensinh@hanu.edu.vn</a></li>
           </ul>
         </div>
       </div>
@@ -280,24 +232,6 @@
     </div>
   </footer>
 
-  <!-- Modal -->
-  <div class="modal fade" id="video-banner" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <iframe class="modal-video" src="https://www.youtube.com/embed/EJd6uDdGkZE" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script defer src="javascript.js"></script>
@@ -307,5 +241,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 </body>
+
+
 
 </html>
