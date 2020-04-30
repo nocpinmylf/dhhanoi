@@ -1,29 +1,21 @@
-let subMenuListStatus = {};
-let subMenuList = document.getElementsByClassName('sub');
-let dropdown = document.getElementsByClassName('dropdown');
+let subMenuList = document.getElementsByClassName('sub')
+let dropdown = document.getElementsByClassName('dropdown')
 
 
 //pre loading
 window.onload = () => {
-	document.getElementsByTagName('body')[0].classList.remove('loading');
-};
-
-// active sub menu
-for (let i = 0; i < subMenuList.length; i++) {
-  subMenuListStatus[i] = false;
-  hideSubItem(subMenuList[i], subMenuListStatus[i]);
+	document.getElementsByTagName('body')[0].classList.remove('loading')
 }
 
-function hideSubItem (element, bool) {
-	if(bool) element.classList.add("active");
-	else element.classList.remove("active");
+// active sub menu
+function hideSubItem (element) {
+	element.classList.toggle("active")
 }
 
 for (let i = 0; i < dropdown.length; i++) {
 	dropdown[i].addEventListener('click', function (e) {
-		e.preventDefault();
-		subMenuListStatus[i] = !subMenuListStatus[i];
-		hideSubItem(subMenuList[i], subMenuListStatus[i]);
-	});
+		e.preventDefault()
+		hideSubItem(subMenuList[i])
+	})
 }
 
