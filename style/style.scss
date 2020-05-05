@@ -58,7 +58,7 @@ MAIN
 
     &>.news-group {
       @include flex(row, null, space-around);
-      width: 100%;
+      width: 50%;
 
       @include breakpoint(small) {
         @include flex(column, center, space-around);
@@ -74,6 +74,14 @@ MAIN
     width: 40%;
     height: 100%;
     text-align: justify;
+    color: $black-color;
+
+
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
     & img {
       width: 100%;

@@ -787,7 +787,7 @@ MAIN
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
       flex-direction: row;
-  width: 100%;
+  width: 50%;
 }
 
 @media (max-width: 500px) {
@@ -819,6 +819,13 @@ MAIN
   width: 40%;
   height: 100%;
   text-align: justify;
+  color: #333;
+}
+
+.main-section .news-item p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .main-section .news-item img {
